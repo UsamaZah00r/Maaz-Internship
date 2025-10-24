@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>html5</title>
+</head>
+<body>
+  <h1>Hello World!</h1>
+
+  <!-- HTML5 Semantic Elements -->
+  <header>This is a header.</header>
+  <nav>This is nav.</nav>
+  <footer>This is footer.</footer>
+  <aside>This is aside.</aside>
+  <article>This is an article.</article>
+  <main>This is main.</main>
+  <figure>
+    <figcaption>This is figure.</figcaption>
+  </figure>
+
+  <!-- HTML5 Forms -->
+  <form action="#" method="get">
+    <label for="email">Email:</label>
+    <input type="email" placeholder="Enter email" autofocus name="email" id="email"><br><br>
+
+    <label for="date">Date:</label>
+    <input type="date" name="date" id="date"><br><br>
+
+    <label for="color">Color:</label>
+    <input type="color" name="color" id="color"><br><br>
+
+    <label for="url">URL:</label>
+    <input type="url" name="url" id="url"><br><br>
+
+    <label for="range">Range:</label>
+    <input type="range" name="range" id="range" max="100" value="10"><br><br>
+
+    <label for="number">Number:</label>
+    <input type="number" name="number" id="number"><br><br>
+
+    <!-- Datalist (works now) -->
+    <label for="myInput">Choose an option:</label>
+    <input type="text" id="myInput" list="myDatalist" placeholder="Choose or type an option">
+    <datalist id="myDatalist">
+      <option value="Option 1">
+      <option value="Option 2">
+      <option value="Option 3">
+
+    </datalist>
+    <!-- datalist not working -->
+
+    <label for="progress">Progress</label>
+    <progress max="100" value="32" >32</progress>
+    <label for="meter">meter</label>
+    <meter value="0.2">20%</meter>
+  </form>
+  <a href="https://yourdomain.com" rel="noopener" target="_blank">Your Domain</a>
+
+  <h1 contenteditable="false" draggable="true" >Hello</h1>
+      <div tabindex="0">Focusable div</div>
+          <button tabindex="-1">Hidden focus button</button>
+          
+            <input type="text" tabindex="2">
+    <input type="text" tabindex="1">
+<script src="index.js"></script>
+</body>
+</html>

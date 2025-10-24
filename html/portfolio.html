@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebSocket Example</title>
+</head>
+<body>
+  <h1>WebSocket Demo</h1>
+
+  <input type="text" id="messageInput" placeholder="Type a message">
+  <button id="sendBtn">Send</button>
+
+  <h3>Messages:</h3>
+  <ul id="messages"></ul>
+
+  <script>
+    // 1️⃣ Create a WebSocket connection (replace with your server URL)
+    const socket = new WebSocket("wss://echo.websocket.events");
+
+    // 2️⃣ Connection opened
+    socket.addEventListener("open", () => {
+      console.log("Connected to WebSocket server!");
+    });
+
+    // 3️⃣ Listen for messages from server
+    socket.addEventListener("message", (event) => {
+      const li = document.createElement("li");
+      li.textContent = "Server: " + event.data;
+      document.getElementById("messages").appendChild(li);
+    });
+
+    // 4️⃣ Send message to server when button clicked
+    document.getElementById("sendBtn").addEventListener("click", () => {
+      const msg = document.getElementById("messageInput").value;
+      socket.send(msg); // Send message to server
+
+      const li = document.createElement("li");
+      li.textContent = "You: " + msg;
+      document.getElementById("messages").appendChild(li);
+
+      document.getElementById("messageInput").value = "";
+    });
+  </script>
+</body>
+</html>

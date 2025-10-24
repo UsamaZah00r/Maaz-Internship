@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.social-icons {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
+.social-icons a {
+    width: 100px;
+    height: 100px;
+    background-image: url(./images/download.jfif);
+    background-repeat: no-repeat;
+    background-size: 400px 400px; 
+    box-shadow: 2px 2px 2px rgb(155, 146, 146);
+    
+}
+
+
+
+.facebook {
+    background-position: -68px -69px;
+    
+}
+
+.youtube {
+    background-position: -68px -233px;
+}
+
+.twitter {
+    background-position: -232px -233px;
+}
+
+.instagram {
+    background-position:-232px -70px;
+}

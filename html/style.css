@@ -1,0 +1,102 @@
+.parent{
+    resize: both;
+    overflow: hidden;
+}
+
+/* @media(prefers-color-scheme: dark){
+    body{
+        background: #000;
+        color: white;
+    }
+} */
+
+/* @media(orientation: landscape){
+    body{
+        background-color: blue;
+        color: white;
+    }
+}
+
+@media(orientation: portrait){
+    body{
+        background-color: blueviolet;
+        color: white;
+    }
+} */
+
+/* @font-face {
+    font-family: ;
+    src: url();
+} */
+
+/* body{
+  mix-blend-mode: normal;
+  background-color:red ;
+
+  transition: mix-blend-mode 0.5s ease-in-out;
+}
+
+body:hover{
+
+  mix-blend-mode: overlay;
+} */
+
+
+/* .parent{
+    background-color: blue;
+    & > p{
+        color: red;
+    }
+
+    & p:hover{
+        color: white;
+    }
+} */
+
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+    
+
+
+
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 2;
+}
+
+.div5 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.div6 {
+    grid-row-start: 3;
+}
+
+.div7 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 3;
+}
+    
+
+.div1,.div2,.div3,.div4,.div5,.div6,.div7{
+    background-color: blue;
+}
+
+table{
+    background-color: blue !important;
+    color: white;
+    background-color: blueviolet;
+    background-color: red;
+}
+
+th, td {
+  padding: 15px;
+  border: 1px solid white;
+}
