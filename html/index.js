@@ -521,3 +521,63 @@
 
 
 
+// function Vehicle(make, model) {
+//   this.make = make;
+//   this.model = model;
+// }
+
+// // Add a method to the Vehicle prototype
+// Vehicle.prototype.honk = function() {
+//   console.log("Beep beep!");
+// };
+
+// let myCar = new Vehicle("Toyota", "Camry");
+// myCar.honk(); // Beep beep! (inherited from Vehicle.prototype)
+
+
+
+// function showThis() {
+//   console.log(this);
+// }
+
+// showThis(); // In a browser, logs the Window object; in Node.js, logs globalThis.
+// // In strict mode, if called as a standalone function, logs undefined.
+
+
+// console.log(this);
+
+
+// console.log(this);
+// console.log(this === window);
+// window.firstName = "Badreddine";
+// console.log(this.firstName);
+
+// console.log(this === window); //true
+
+
+// "use strict";
+// function regularFunction() {
+//     console.log(this);
+// }
+
+// regularFunction();// it will be undefine
+
+
+
+// const infos = function (techOne, techTwo, techThre) {
+//    console.log(
+//       `Hi, my name is ${this.name}, I'm a ${this.job}, I use ${techOne}, ${techTwo} and ${techThre}`
+//    );
+// };
+
+// const me = {
+//    name: "Badreddine",
+//    job: "Frontend Developer",
+// };
+
+// const technologies = ["React", "TypeScript", "Tailwind"];
+
+// infos.call(me, technologies[0], technologies[1], technologies[2]);
+
+
+
