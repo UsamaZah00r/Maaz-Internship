@@ -428,9 +428,96 @@
 // console.log(generate());
 
 
-let days = new Map()
+// let days = new Map()
 
-days.set('1','friday')
-days.set("2",23)
+// days.set('1','friday')
+// days.set("2",23)
 
-console.log(days);
+// console.log(days);
+
+
+/*  Method of Map inclide 
+ get
+ set
+ delete
+ clear*/
+
+//  function outer() {
+    
+//     function inner() {
+//         console.log("This is the inner function.")
+//     }
+
+//     inner();
+
+//     console.log('This is the outer function')
+// }
+// outer();
+
+
+// function addOut(a,b){
+//   function addIn(c,d){
+//     console.log(a+b+c+d);
+    
+//   }
+//   addIn(1,2)
+// }
+// addOut(3,4)
+
+
+// function greet(name) {
+//     const hours = new Date().getHours();
+//     const timeOfDay = hours < 12 ? "Good morning" : hours < 18 ? 
+//         "Good afternoon" : "Good evening";
+//     console.log(`${timeOfDay}, ${name}!`);
+// }
+
+// greet("Usama");
+
+
+// function createCounter() {
+//   let count = 0; // This variable becomes part of the closure's persistent state
+
+//   return {
+//     increment: function() {
+//       count++;
+//       return count;
+//     },
+//     decrement: function() {
+//       count--;
+//       return count;
+//     },
+//     getValue: function() {
+//       return count;
+//     }
+//   };
+// }
+
+// const counter1 = createCounter();
+// console.log(counter1.increment()); // Output: 1
+// console.log(counter1.increment()); // Output: 2
+// console.log(counter1.getValue());  // Output: 2
+
+// const counter2 = createCounter(); // Creates a separate, independent state
+// console.log(counter2.increment()); // Output: 1
+// console.log(counter1.getValue());  // Output: 2 (counter1's state remains independent)
+
+
+
+
+// let a = {
+//   name:"name",
+//   section:"section"
+// }
+
+
+// let data = Object.getPrototypeOf(a)
+// console.log(data);
+
+// let b = Object.create(a)
+
+// console.log(a);
+// console.log(b);
+
+
+
