@@ -579,5 +579,119 @@
 
 // infos.call(me, technologies[0], technologies[1], technologies[2]);
 
+// let arr = [1,2,3,4,5]
+// console.log(arr.toString())
+// console.log(typeof(arr.toString()));
 
 
+
+
+// let arr1 = [1,2,3,4,5]
+// let arr2 = [6,7,8,9,0]
+// let arr3 = arr1.concat(arr2)
+// console.log(arr3);
+
+
+// let arr = [1,2,3,4,5]
+// let deleteArr = arr.splice(0,3)
+// console.log(arr);
+// console.log(deleteArr);
+
+
+// let arr = [1,2,3,4,5]
+
+// arr.forEach((item,indx)=>{
+//   console.log(item);
+//   console.log(indx);
+  
+  
+// })
+
+
+
+// console.log("this is log");
+// console.warn("this is warn");
+// console.error("this is error");
+
+
+
+// const users = [
+//   { id: 1, name: "Alice", age: 25 },
+//   { id: 2, name: "Bob", age: 30 },
+//   { id: 3, name: "Charlie", age: 28 }
+// ];
+// console.table(users);
+
+
+// let arr = [1,2,3,4,5,6]
+
+// console.table(arr)
+
+
+// if ('geolocation' in navigator) {
+//   console.log('Geolocation is Available');
+// } else {
+//   console.log('Geolocation is NOT Available');
+// }
+
+// function success(position) {
+//   console.log(position);
+// }
+
+// navigator.geolocation.getCurrentPosition(success);
+
+
+
+// const locationResult = document.querySelector('#locationResult');
+//   document.querySelector('#getLocation').addEventListener('click', () => {
+//     locationResult.textContent = 'Retrieving User Location...'
+
+//     function success(position) {
+//       let { coords } = position;
+//       locationResult.textContent = 'See my location on a map';
+//       locationResult.href = `https://www.openstreetmap.org?mlat=${coords.latitude}&mlon=${coords.longitude}`;
+//     }
+
+//     navigator.geolocation.getCurrentPosition(success);
+//   });
+
+
+
+// Notification.requestPermission().then(permission => {
+//   if (permission === 'granted') {
+//     console.log('Notification permission granted.');
+//     // Proceed to send notifications
+//   } else if (permission === 'denied') {
+//     console.log('Notification permission denied.');
+//   } else { // 'default'
+//     console.log('Notification permission not yet decided.');
+//   }
+// });
+
+
+
+// if (Notification.permission === 'granted') {
+//   const notification = new Notification('Title of Notification', {
+//     body: 'This is the body of the notification.',
+//     icon: 'path/to/icon.png', // Optional: A URL of an image to be used as an icon
+//     tag: 'unique_notification_id', // Optional: A unique ID for the notification
+//     requireInteraction: true // Optional: Keeps the notification active until user interaction
+//   });
+
+//   // Optional: Event listeners for notification interactions
+//   notification.onclick = () => {
+//     console.log('Notification clicked!');
+//     // Perform an action, e.g., redirect to a page
+//   };
+
+//   notification.onclose = () => {
+//     console.log('Notification closed!');
+//   };
+// }
+
+// const data = await fetch("https://api.freeapi.app/api/v1/public/randomjokes/joke/random")
+// .then((e)=>e.json())
+// .catch((err)=>console.log(err)
+// )
+
+// console.log(data);
